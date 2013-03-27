@@ -1,0 +1,38 @@
+headerFont = "Nixie One", sans-serif
+bodyFont = "Sintony", sans-serif
+monospaceFont = "Source Code Pro", monospace
+
+highlightColor = #3299BB
+bodyColor = #343838
+bkgColor = #fff
+
+body 
+	font-family: bodyFont
+	font-size: 14px
+	line-height: 1.7
+	background: bkgColor
+	color: bodyColor
+	padding: 6px 24px
+
+header#siteHeader
+	h1 
+		font-size: 38px
+		margin: 15px 0 36px
+
+		em 
+			font-size: 18px
+			display: block
+			line-height: 22px
+
+
+h1, h2, h3, h4, h5, h6
+	font-family: headerFont
+	color: darken(bodyColor, 12%)
+	text-align: center
+
+a 
+	&:link, &:visited
+		color: highlightColor
+		text-decoration: underline
+	&:hover, &:active 
+		color: darken(highlightColor, 12%)

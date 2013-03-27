@@ -1,0 +1,54 @@
+
+/* line 1 : /labs/Projects/jiewmeng.github.com/node_modules/stylus/lib/functions/index.styl */
+
+/* line 9 : /labs/Projects/jiewmeng.github.com/css/styles.styl */
+body {
+  font-family: "Sintony", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  background: #fff;
+  color: #343838;
+  padding: 6px 24px;
+}
+
+/* line 17 : /labs/Projects/jiewmeng.github.com/css/styles.styl */
+
+/* line 18 : /labs/Projects/jiewmeng.github.com/css/styles.styl */
+header#siteHeader h1 {
+  font-size: 38px;
+  margin: 15px 0 36px;
+}
+
+/* line 22 : /labs/Projects/jiewmeng.github.com/css/styles.styl */
+header#siteHeader h1 em {
+  font-size: 18px;
+  display: block;
+  line-height: 22px;
+}
+
+/* line 28 : /labs/Projects/jiewmeng.github.com/css/styles.styl */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nixie One", sans-serif;
+  color: #2e3131;
+  text-align: center;
+}
+
+/* line 33 : /labs/Projects/jiewmeng.github.com/css/styles.styl */
+
+/* line 34 : /labs/Projects/jiewmeng.github.com/css/styles.styl */
+a:link,
+a:visited {
+  color: #3299bb;
+  text-decoration: underline;
+}
+
+/* line 37 : /labs/Projects/jiewmeng.github.com/css/styles.styl */
+a:hover,
+a:active {
+  color: #2c87a5;
+}

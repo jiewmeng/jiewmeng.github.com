@@ -1,0 +1,25 @@
+headerFont = "Nixie One", sans-serif
+bodyFont = "Sintony", sans-serif
+monospaceFont = "Source Code Pro", monospace
+
+highlightColor: #3299BB
+bodyColor: #343838
+bkgColor: #ECE5CE
+
+body 
+	font-family: bodyFont
+	font-size: 14px
+	line-height: 1.7
+	background: bkgColor
+	color: bodyColor
+
+h1, h2, h3, h4, h5, h6
+	font-family: headerFont
+	color: darken(bodyColor, 12%)
+
+a 
+	&:link, &:visited
+		color: highlightColor
+		text-decoration: underline
+	&:hover, &:active 
+		color: darken(highlightColor, 12%)
