@@ -1,17 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Jiew Meng"s Portfolio &amp; Blog</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link href="http://fonts.googleapis.com/css?family=Nixie+One|Source+Code+Pro:400,700|Sintony:400,700" rel="stylesheet" />
-	<link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-	<header id="siteHeader">
-		<h1>Jiew Meng <em>Portfolio &amp; Blog</em></h1>
-	</header>
-	
-	<p>Work in Progress ... Testing out GitHub personal pages</p>
-</body>
-</html>
+---
+layout: default
+---
+
+{% for post in site.posts %}
+	<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+{% endfor %}
