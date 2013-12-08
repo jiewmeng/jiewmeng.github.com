@@ -1,7 +1,10 @@
 body {
 	font: 16px/2 "Open Sans", sans-serif;
+	padding: 10px;
+	max-width: 980px;
+	margin: 0 auto;
 }
-h1, h2, h3, h4, h5, h6 { font-weight: normal; line-height: 1.2em; margin: 15px 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; line-height: 1.2em; margin: 15px 0; color: #2C3E50; }
 header h1 { font-size: 42px; }
 h1, h2, h3 { margin: 25px 0; }
 h1 { font-size: 32px; }
@@ -22,4 +25,70 @@ pre {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
+}
+
+a:link, a:visited {
+	color: #2980B9;
+	text-decoration: none;
+	border-bottom: 1px dotted #2980B9;
+}
+
+a:hover, a:active {
+	color: #E74C3C;
+	border-bottom: 0;
+}
+
+h1 a:link, h1 a:visited {
+	border-bottom: 0;
+}
+
+::-moz-selection {
+    background: #C0392B;
+    text-shadow: none;
+    color: #fff;
+}
+
+::selection {
+    background: #C0392B;
+    text-shadow: none;
+    color: #fff;
+}
+
+#siteHeader {
+	position: relative;
+	margin-bottom: 50px;
+}
+
+#siteName {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+#siteName a:link, #siteName a:visited {
+	color: #2C3E50;
+}
+
+#siteName + .tagName {
+	color: #BDC3C7;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: -25px;
+}
+
+#siteNav {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#siteNav a:link, #siteNav a:visited {
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0 10px;
+	color: #7F8C8D;
+	border-bottom: 0;
+}
+
+#siteNav a:hover, #siteNav a:active {
+	color: #E74C3C;
 }
