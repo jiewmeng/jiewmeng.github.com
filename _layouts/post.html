@@ -1,0 +1,11 @@
+{% include header.html %}
+<section id="siteContent">
+	<article>
+		<header>
+			<h1>{{ page.title }}</h1>
+			<date class="articlePostedOn">{{ page.date | date_to_string }}</date>
+		</header>
+		{{ content | markdownify }}
+	</article>
+</section>
+{% include footer.html %}

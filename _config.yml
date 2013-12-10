@@ -1,0 +1,4 @@
+timezone: Asia/Singapore
+encoding: UTF-8
+limit_posts: 50
+pygments: true

@@ -106,3 +106,23 @@ article .articlePostedOn {
 	color: #BDC3C7;
 }
 
+#blogPostsList {
+	list-style: none;
+	padding: 0;
+	margin: 0;	
+}
+
+#blogPostsList a:link, #blogPostsList a:visited {
+	border-bottom: 0;
+	padding: 0 5px;
+	line-height: 2.4em;
+	font-weight: bold;
+	display: block;
+}
+
+#blogPostsList date {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #BDC3C7;
+	margin-right: 15px;
+}
