@@ -42,6 +42,27 @@ h1 a:link, h1 a:visited {
 	border-bottom: 0;
 }
 
+blockquote {
+	font-size: 30px;
+	font-style: italic;
+	line-height: 1.6em;
+	padding: 20px 40px; 
+	margin: 30px 0;
+	border-top: 1px solid #95A5A6;
+	border-bottom: 1px solid #95A5A6;
+	color: #2C3E50;
+}
+
+blockquote a:link, blockquote a:visited {
+	color: #2C3E50;
+	border-color: #2C3E50;
+}
+
+blockquote a:hover, blockquote a:active {
+	color: #E74C3C;
+	border-color: #E74C3C;
+}
+
 ::-moz-selection {
     background: #C0392B;
     text-shadow: none;
@@ -54,9 +75,13 @@ h1 a:link, h1 a:visited {
     color: #fff;
 }
 
+.indent {
+	padding-left: 30px;
+}
+
 #siteHeader {
 	position: relative;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 #siteName {
@@ -89,12 +114,17 @@ h1 a:link, h1 a:visited {
 	border-bottom: 0;
 }
 
-#siteNav a:hover, #siteNav a:active {
+#siteNav a:hover, #siteNav a:active, #siteNav a.active {
 	color: #E74C3C;
 }
 
 article {
 	position: relative;
+}
+
+article header .category {
+	font-size: 14px;
+
 }
 
 article .articlePostedOn {
@@ -118,6 +148,8 @@ article .articlePostedOn {
 	line-height: 2.4em;
 	font-weight: bold;
 	display: block;
+	position: relative;
+	overflow: hidden;
 }
 
 #blogPostsList date {
@@ -125,4 +157,86 @@ article .articlePostedOn {
 	text-transform: uppercase;
 	color: #BDC3C7;
 	margin-right: 15px;
+	float: left;
+}
+
+#blogPostsList .title {
+	float: left;
+	margin-right: 15px;
+}
+
+#blogPostsList .category {
+	font-size: 10px;
+	line-height: 1.4em;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #BDC3C7;
+	float: left;
+	padding: 0 6px;
+	position: relative;
+	top: 12px;
+	background: #3498DB;
+	color: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#blogPostsList .category-portfolio .category {
+	background: #E74C3C;
+}
+
+#blogPostsList .category-portfolio .categories {
+	color: #E74C3C;
+}
+
+#pagination {
+	overflow: hidden;
+	margin: 20px 0;
+}
+
+.paginator-prev:link, .paginator-prev:visited, 
+.paginator-next:link, .paginator-next:visited {
+	font-size: 14px; 
+	text-transform: uppercase;
+	border: 0;
+}
+
+.paginator-prev {
+	float: left;
+}
+
+.paginator-next {
+	float: right;
+}
+
+.resumeItem {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.resumeItem header {
+	width: 25%;
+	margin-right: 2%;
+	float: left;
+}
+
+.resumeItemContent {
+	width: 73%;
+	float: left;
+}
+
+.resumeMeta {
+	font-size: 14px;
+	margin: 0;
+	color: #7F8C8D;
+}
+
+.resumeItem h5, .resumeItem header p {
+	margin: 5px 0;
+}
+
+.resumeItem header p {
+	font-size: 14px;
+	color: #7F8C8D;
 }

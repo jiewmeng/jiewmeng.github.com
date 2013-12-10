@@ -1,0 +1,18 @@
+---
+layout: default
+title: Portfolio
+---
+
+<blockquote>My portfolio</blockquote>
+
+<ul id="blogPostsList">
+	{% for post in site.categories.portfolio %}
+	<li>
+		<a href="{{ post.url }}" 
+			class="category-{{ post.categories | join: '-' }}">
+			<date>{{ post.date | date_to_string }}</date>
+			<span class="title">{{ post.title }}</span> 
+		</a>
+	</li>
+	{% endfor %}
+</ul>
