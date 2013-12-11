@@ -1,0 +1,69 @@
+---
+layout: portfolio
+title: QuickImageUpload
+category: portfolio
+tags: [C#, WPF]
+---
+
+##### The Problem
+
+Sometime ago, I wanted a way to upload images to some web service so I can use them in online forums or social networks easily. I thought of ImageShack at first, until StackOverflow started using Imgur. Their API seems easy enough to use, better documented than the ImageShack one. I started with ImageShack at first, but after having some difficulties, I switched to Imgur. I plan to integrate ImageShack still as an alternative service.
+
+##### The Vision
+
+Quickly upload images to Imgur/ImageShack(planned) via Intuitive Drag & Drop or copy & paste and use them (eg. in online forums & social networks)
+
+##### The Result
+
+<section class="gallery">
+	<a class="lightboxLink" href="{{ site.url }}/img/portfolio/quickimageupload.jpg" data-lightbox="quickimageupload" title="The app"><img src="{{ site.url }}/img/portfolio/quickimageupload.jpg" alt="The app"></a>
+</section>
+
+##### Download
+
+[Source on GitHub](https://github.com/jiewmeng/QuickImageUpload)
+
+[on SkyDrive](https://skydrive.live.com/redir.aspx?cid=b32a2f4f9600af06&resid=B32A2F4F9600AF06!141&parid=B32A2F4F9600AF06!140&authkey=!)
+
+##### The Making Of
+
+Before I started learning .NET, I am mainly a Web Developer developing in PHP (learning some Zend Framework), HTML, CSS, JS (jQuery of course). I started .NET stuff as I felt its the best for building Windows Desktop apps. WPF had great integration with new features in Windows 7 like Taskbar Thumbnails, Jumplists etc that I felt will improve usability & productivity. Also with this new skills (C#/WPF/MVVM) it will be easy to move to various .NET tech like ASP.NET MVC, Windows Phone 7, even cloud development in Windows Azure.
+
+My current areas of focus in the .NET Framework:
+
+- C#
+- WPF
+- LINQ
+- Entity Framework
+
+**Resources I found useful**:
+
+- Videos
+
+	- [MSDN How do I for C#](http://msdn.microsoft.com/en-us/vcsharp/bb798022.aspx#c4): I just watched mainly the C#/WPF/Entity Framework stuff
+	- [Windows Client](http://windowsclient.net/learn/): You can find videos on WPF, LINQ, WPF for Windows 7 here
+	- [Channel 9](http://channel9.msdn.com/) - A fun way to learn
+	- [PDC](http://player.microsoftpdc.com/schedule/sessions) - Some videos I recommend the [Keynote](http://channel9.msdn.com/events/PDC/PDC10/KEY01), [Future of C# & VB](http://channel9.msdn.com/events/PDC/PDC10/FT09) (talks about the Async CTP good stuff), [Code First Entity Framework](http://channel9.msdn.com/events/PDC/PDC10/FT02), [C# IDE Tips & Tricks](http://www.microsoftpdc.com/2009/FT35), not forgetting the funny and insightful talk by Luca on PDC08: [An Intro to F#](http://channel9.msdn.com/Blogs/pdc2008/TL11)
+	- [MIX](http://live.visitmix.com/Videos) - [Modern Form Design](http://live.visitmix.com/MIX10/Sessions/EX03), [Understanding the MVVM Pattern](http://live.visitmix.com/MIX10/Sessions/EX14), [Build Your Own MVVM Framework](http://live.visitmix.com/MIX10/Sessions/EX15)
+
+- Books (I don’t really like reading … but for a more complete overview, its better to read books … and they are good for references, an alternative to Google)
+
+	- [Pro C# 4.0 in a Nutshell](http://www.amazon.com/gp/product/0596800959?ie=UTF8&tag=jiemenstum-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0596800959)
+	- [Pro WPF in C# 2010](http://www.amazon.com/gp/product/1430272058?ie=UTF8&tag=jiemenstum-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1430272058)
+
+**MVVM**
+
+I think that its best pratice to use a framework like MVC for Web for separation of concerns leading to better maintainability. I used [Josh Smith](http://joshsmithonwpf.wordpress.com/)'s [MVVM Foundation framework](http://mvvmfoundation.codeplex.com/), I found that its a small & easy to learn framework compared to others I tried like [MVVM Light](http://mvvmfoundation.codeplex.com/) & [Caliburn Micro](http://caliburnmicro.codeplex.com/).
+
+**Resources**:
+
+Links provided in the question “[MVVM: Tutorial from start to finish](http://stackoverflow.com/questions/1405739/mvvm-tutorial-from-start-to-finish/2034333#2034333)?" at StackOverflow is a great starting point. Persoanlly, I’ve learnt alot from the [MSDN Magazine article](http://msdn.microsoft.com/en-us/magazine/dd419663.aspx) (1st link provided for MVVM)
+
+**The Future**
+
+I think going forward, I will be working on Authenticated Uploads and ImageShack Integration.
+
+I considered making the app alittle fancier with Expression Blend, but it proved challenging, I am no designer, esp the animation part. eg. Fade+Slide ListBoxItems in/out as they are added/removed. I guess so, I will focus on what I do best 1st, the development/functionality then maybe look at Expression Blend later.
+
+However, I think the future of apps look more like on the Web, I will be focusing on Web Apps (HTML5, jQuery, CSS3, PHP/Zend Framework) after completing QuickImageUpload & MarkdownEdit. Maybe even having a Web App version of those.
+

@@ -12,6 +12,10 @@ title: Portfolio
 			class="category-{{ post.categories | join: '-' }}">
 			<date>{{ post.date | date_to_string }}</date>
 			<span class="title">{{ post.title }}</span> 
+
+			{% for tag in post.tags %}
+				<span class="tag">{{ tag }}</span>
+			{% endfor %}
 		</a>
 	</li>
 	{% endfor %}

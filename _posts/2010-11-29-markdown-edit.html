@@ -1,0 +1,34 @@
+---
+layout: portfolio
+title: Markdown Edit
+category: portfolio
+tags: [C#, WPF]
+---
+
+##### The Problem
+
+After using Markdown in StackOverflow for sometime, I grown fond of it and wanted to use it for any generic documents, an alternative for Microsoft Word for example. There wasn’t any app I found that uses it. Also Microsoft Word is bloated for my needs, plus, it isn’t good for code, no way I found to have syntax highlighting. So I started developing MarkdownEdit
+
+##### The Vision
+
+Word processing powered by Markdown
+
+##### The Result
+
+<section class="gallery">
+	<a class="lightboxLink" href="{{ site.url }}/img/portfolio/markdown-edit-app.jpg" data-lightbox="markdownedit" title="The app"><img src="{{ site.url }}/img/portfolio/markdown-edit-app.jpg" alt="The app"></a>
+	<a class="lightboxLink" href="{{ site.url }}/img/portfolio/markdown-edit-output.jpg" data-lightbox="markdownedit" title="Output"><img src="{{ site.url }}/img/portfolio/markdown-edit-output.jpg" alt="Output"></a>
+</section>
+
+##### Download
+
+[on SkyDrive](https://skydrive.live.com/redir.aspx?cid=b32a2f4f9600af06&resid=B32A2F4F9600AF06!142&parid=B32A2F4F9600AF06!140&authkey=!)
+
+##### The making of
+
+This app was developed at around the same time as QuickImageUpload, this is developed in C#/WPF/MVVM.
+
+This app was a great learning experience for me. I 1st learnt how to have multiple closable tabs from this [MSDN Magazine Article](http://msdn.microsoft.com/en-us/magazine/dd419663.aspx). Then other MVVM stuff like ICommands, since I was using MVVM Foundation, I used RelayCommands. I tried implementing the Editor in MVVM, but I discovered soon that its not really the best way to do it. In my ViewModels, won’t know whats the SelectedText etc. which is required to manipulate the selection etc. So I started encapsulating all those stuff in a UserControl. An advantage of this will be that it is reusable throughout different tabs. Then there is IO stuff like read/open, write/save. Then there is more advanced stuff like checking if the opened document has been edited outside the application.
+
+It like QuickImageUpload is far from perfect, should be refactored, but I am thinking of focusing more on developing Web Apps from now. Maybe some apps for Envato Marketplaces like CodeCanyon, ThemeForest & Tuts+ Marketplace
+
