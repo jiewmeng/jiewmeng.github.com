@@ -107,8 +107,7 @@ a.lightboxLink img {
 }
 
 #siteName {
-	text-transform: uppercase;
-	font-size: 30px;
+	font: 36px/1.2em "Pacifico", "Open Sans", sans-serif;
 }
 
 #siteName a:link, #siteName a:visited {
@@ -116,7 +115,7 @@ a.lightboxLink img {
 }
 
 #siteName + .tagName {
-	color: #BDC3C7;
+	color: #666;
 	text-transform: uppercase;
 	font-size: 14px;
 	margin-top: -25px;
@@ -132,12 +131,16 @@ a.lightboxLink img {
 	font-size: 14px;
 	text-transform: uppercase;
 	padding: 0 10px;
-	color: #7F8C8D;
+	color: #666;
 	border-bottom: 0;
 }
 
 #siteNav a:hover, #siteNav a:active, #siteNav a.active {
 	color: #E74C3C;
+}
+
+#siteNav a.active {
+	font-weight: bold;
 }
 
 #siteContent > blockquote {
@@ -254,6 +257,7 @@ article .articlePostedOn {
 
 .resumeMeta {
 	font-size: 14px;
+	line-height: 1.8em;
 	margin: 0;
 	color: #7F8C8D;
 }
@@ -264,7 +268,7 @@ article .articlePostedOn {
 
 .resumeItem header p {
 	font-size: 14px;
-	color: #7F8C8D;
+	color: #666;
 }
 
 .gallery {
