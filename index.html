@@ -3,16 +3,16 @@ layout: default
 title: Jiew Meng's Blog &amp; Portfolio
 ---
 
-<blockquote>Hi there, I like to <strong>design</strong> and <strong>develop usable</strong> and <strong>beautiful applications</strong> that help streamline and simplify our work. Check out my <strong><a href="/portfolio.html" title="My portfolio">past works</a></strong>. Be sure to <strong><a href="/contact.html" title="Contact/social media information">keep in touch</a></strong></blockquote> 
+<blockquote class="pageTitle">Hi there, I like to <strong>design</strong> and <strong>develop usable</strong> and <strong>beautiful applications</strong> that help streamline and simplify our work. Check out my <strong><a href="/portfolio.html" title="My portfolio">past works</a></strong>. Be sure to <strong><a href="/contact.html" title="Contact/social media information">keep in touch</a></strong></blockquote> 
 
-<ul id="blogPostsList">
+<ul class="postsList">
 	{% for post in paginator.posts %}
 	<li>
 		<a href="{{ post.url }}" 
 			class="category-{{ post.categories | join: '-' }}">
 			<date>{{ post.date | date_to_string }}</date>
 			<span class="title">{{ post.title }}</span> 
-			<!--<span class="category">{{ post.categories | array_to_sentence_string }}</span>-->
+			<span class="category">{{ post.categories | array_to_sentence_string }}</span>
 		</a>
 	</li>
 	{% endfor %}

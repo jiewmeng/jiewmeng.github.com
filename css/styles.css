@@ -4,10 +4,10 @@ body {
 	max-width: 980px;
 	margin: 0 auto;
 	-webkit-font-smoothing: antialiased;
-	-webkit-text-stroke: 1px rgba(0,0,0,0.1)
+	-webkit-text-stroke: 1px rgba(0,0,0,0.1);
 }
+
 h1, h2, h3, h4, h5, h6 { font-weight: normal; line-height: 1.2em; margin: 15px 0; color: #2C3E50; }
-header h1 { font-size: 42px; }
 h1, h2, h3 { margin: 25px 0; }
 h1 { font-size: 32px; }
 h2 { font-size: 26px; }
@@ -44,15 +44,22 @@ h1 a:link, h1 a:visited {
 	border-bottom: 0;
 }
 
-blockquote {
+blockquote, .pageTitle {
 	font-size: 30px;
-	font-style: italic;
 	line-height: 1.6em;
 	padding: 20px 40px; 
 	margin: 30px 0;
 	border-top: 1px solid #95A5A6;
 	border-bottom: 1px solid #95A5A6;
 	color: #2C3E50;
+}
+
+.pageTitle h1 {
+	margin: 0;
+}
+
+.pageTitle .articlePostedOn {
+	line-height: 80px;
 }
 
 blockquote a:link, blockquote a:visited {
@@ -69,24 +76,6 @@ article, section {
 	overflow: hidden;
 }
 
-a.lightboxLink {
-	padding: 6px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-	-moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-	box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-	display: block;
-	float: left;
-	margin-right: 10px;
-	border-bottom: 0;
-}
-
-a.lightboxLink img {
-	max-width: 180px;
-}
-
 ::-moz-selection {
     background: #C0392B;
     text-shadow: none;
@@ -99,28 +88,24 @@ a.lightboxLink img {
     color: #fff;
 }
 
-.indent {
-	padding-left: 30px;
+.siteName {
+	font: 36px/1.2em "Pacifico", "Open Sans", sans-serif;
+}
+
+.siteName a:link, .siteName a:visited {
+	color: #2C3E50;
+}
+
+.tagLine {
+	color: #666;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: -25px;
 }
 
 #siteHeader {
 	position: relative;
 	margin-bottom: 30px;
-}
-
-#siteName {
-	font: 36px/1.2em "Pacifico", "Open Sans", sans-serif;
-}
-
-#siteName a:link, #siteName a:visited {
-	color: #2C3E50;
-}
-
-#siteName + .tagName {
-	color: #666;
-	text-transform: uppercase;
-	font-size: 14px;
-	margin-top: -25px;
 }
 
 #siteNav {
@@ -145,8 +130,27 @@ a.lightboxLink img {
 	font-weight: bold;
 }
 
-#siteContent > blockquote {
+.pageTitle {
 	margin-top: 0;
+}
+
+a.lightboxLink {
+	padding: 4px;
+/*	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+*/	-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+	-moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+	display: block;
+	float: left;
+	margin-right: 10px;
+	border-bottom: 0;
+}
+
+a.lightboxLink img {
+	max-width: 180px;
+	display: block;
 }
 
 article {
@@ -155,25 +159,24 @@ article {
 
 article header .category {
 	font-size: 14px;
-
 }
 
 article .articlePostedOn {
 	position: absolute;
-	top: 22px;
+	top: 0;
 	right: 0;
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #BDC3C7;
 }
 
-#blogPostsList {
+.postsList {
 	list-style: none;
 	padding: 0;
 	margin: 0;	
 }
 
-#blogPostsList a:link, #blogPostsList a:visited {
+.postsList a:link, .postsList a:visited {
 	border-bottom: 0;
 	padding: 0 5px;
 	line-height: 2.4em;
@@ -183,7 +186,7 @@ article .articlePostedOn {
 	overflow: hidden;
 }
 
-#blogPostsList date {
+.postsList date {
 	font-size: 14px;
 	text-transform: uppercase;
 	color: #BDC3C7;
@@ -191,12 +194,12 @@ article .articlePostedOn {
 	float: left;
 }
 
-#blogPostsList .title {
+.postsList .title {
 	float: left;
 	margin-right: 15px;
 }
 
-#blogPostsList .category, #blogPostsList .tag {
+.postsList .category, .postsList .tag {
 	font-size: 10px;
 	line-height: 1.4em;
 	font-weight: normal;
@@ -213,11 +216,11 @@ article .articlePostedOn {
 	margin-right: 5px;
 }
 
-#blogPostsList .category-portfolio .category {
+.postsList .category-portfolio .category {
 	background: #E74C3C;
 }
 
-#blogPostsList .category-portfolio .categories {
+.postsList .category-portfolio .categories {
 	color: #E74C3C;
 }
 
