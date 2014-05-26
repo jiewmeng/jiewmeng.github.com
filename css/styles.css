@@ -1,5 +1,5 @@
 body {
-	font: 300 18px/2.3em "Open Sans", sans-serif;
+	font: 300 16px/2em "Open Sans", sans-serif;
 	padding: 10px;
 	max-width: 980px;
 	margin: 0 auto;
@@ -15,6 +15,10 @@ h3 { font-size: 22px; }
 h4 { font-size: 18px; }
 h5 { font-size: 14px; text-transform: uppercase; font-weight: bold; }
 h6 { font-size: 14px; font-weight: bold; }
+
+ul {
+	padding-left: 20px;
+}
 
 code, pre {
 	font: 14px/1.5 "PT Mono", monospace;
@@ -45,13 +49,18 @@ h1 a:link, h1 a:visited {
 }
 
 blockquote, .pageTitle {
-	font-size: 30px;
+	font-size: 22px;
 	line-height: 1.6em;
-	padding: 20px 40px; 
+	padding: 10px; 
 	margin: 30px 0;
-	border-top: 1px solid #95A5A6;
-	border-bottom: 1px solid #95A5A6;
+	/*border-top: 1px solid #95A5A6;
+	border-bottom: 1px solid #95A5A6;*/
 	color: #2C3E50;
+}
+
+.pageTitle {
+	padding: 10px 0;
+	color: #C0392B;
 }
 
 .pageTitle h1 {
@@ -59,7 +68,7 @@ blockquote, .pageTitle {
 }
 
 .pageTitle .articlePostedOn {
-	line-height: 80px;
+	line-height: 58px;
 }
 
 blockquote a:link, blockquote a:visited {
@@ -106,24 +115,26 @@ article, section {
 #siteHeader {
 	position: relative;
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 #siteNav {
-	position: absolute;
-	top: 0;
-	right: 0;
+	border-top: 1px solid #95A5A6;
+	border-bottom: 1px solid #95A5A6;
+	padding: 0 0 1px 0;
 }
 
 #siteNav a:link, #siteNav a:visited {
-	font-size: 14px;
+	font-size: 12px;
 	text-transform: uppercase;
-	padding: 0 10px;
+	padding: 0 8px;
 	color: #666;
 	border-bottom: 0;
+	display: inline-block;
 }
 
 #siteNav a:hover, #siteNav a:active, #siteNav a.active {
-	color: #E74C3C;
+	color: #2C3E50;
 }
 
 #siteNav a.active {
@@ -249,20 +260,9 @@ article .articlePostedOn {
 	margin-bottom: 30px;
 }
 
-.resumeItem header {
-	width: 25%;
-	margin-right: 2%;
-	float: left;
-}
-
-.resumeItemContent {
-	width: 73%;
-	float: left;
-}
-
 .resumeMeta {
-	font-size: 14px;
-	line-height: 1.8em;
+	font-size: 12px;
+	line-height: 1.5em;
 	margin: 0;
 	color: #7F8C8D;
 }
@@ -299,4 +299,35 @@ article .articlePostedOn {
 	background: #E74C3C;
 	border-top: 1px solid #E74C3C;
 	border-bottom: 1px solid #E74C3C;
+}
+
+@media (min-width: 601px) {
+	#siteHeader {
+		text-align: left;
+	}
+
+	#siteNav {
+		border-top: 0;
+		border-bottom: 0;
+		position: absolute;
+		top: 16px;
+		right: 0;
+	}
+
+	#siteNav a:link, #siteNav a:visited {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	.resumeItem header {
+		width: 25%;
+		margin-right: 2%;
+		float: left;
+	}
+
+	.resumeItemContent {
+		width: 73%;
+		float: left;
+	}
 }
